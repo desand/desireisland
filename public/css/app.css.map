@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.sass"],"names":[],"mappings":"AAGS;EAKP,WAAW,EAJA","file":"app.css","sourcesContent":["//@import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\n\n@mixin e($name) {\n\t@at-root #{&}__#{$name} {\n\t\t@content; } }\n\n.test {\n\t@include e(item) {\n\t\tcolor: red; } }\n\n"],"sourceRoot":"/source/"}

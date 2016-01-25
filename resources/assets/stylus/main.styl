@@ -1,0 +1,41 @@
+base-black = #000
+
+// Mixins.styl
+has($name)
+  /&__{$name}
+    {block}
+
+variant($name)
+  /&--{$name}
+    {block}
+
+add(a, b = unit(a, px))
+   a + b
+   	
+color-black()
+	color: base-black
+
+border-radius()
+	-webkit-border-radius: arguments
+	-moz-border-radius: arguments
+	border-radius: arguments
+
+body
+	font: 12px Helvetica, Arial, sans-serif
+
+a.button
+	border-radius(5px)
+	&__item
+		color: red
+
+.dx-header
+	color-black()
+	
+.DXHeader
+	+has(item)
+		color red(#000, 255)
+		font add(6px, 1) Helvetica, Arial
+		
+	.test
+		color green
+	

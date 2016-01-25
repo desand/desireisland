@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-runtime": "^6.3.19",
+    "browserify": "^12.0.1",
+    "gritcode-components": "^0.1.6",
+    "gulp": "^3.9.0",
+    "insert-css": "^0.2.0",
+    "jquery": "^2.2.0",
+    "laravel-elixir-jade": "^0.2.3",
+    "laravel-elixir-stylus": "^1.0.1",
+    "laravel-elixir-vueify": "^1.0.2",
+    "reactify": "^1.1.1",
+    "vue": "^1.0.14",
+    "vue-hot-reload-api": "^1.2.2",
+    "vue-strap": "^1.0.3",
+    "vueify": "^8.3.2",
+    "vueify-insert-css": "^1.0.0",
+    "vuestrap-base-components": "^0.8.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.0.0",
+    "laravel-elixir": "^4.0.4"
+  }
+}
