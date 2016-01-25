@@ -18,7 +18,7 @@
 </vs-alert>
 <section class="dx-header">
 	<div class="col-xs-12">
-		@yield('title', $_title)
+		@yield('title', $_title)123
 		<div class="pull-right">
 			<div class="glyphicon glyphicon-refresh"></div>
 		</div>
