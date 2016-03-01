@@ -14,6 +14,7 @@
 Route::get('/', 'WebappController@index');
 
 Route::get('h5', 'WelcomeController@h5');
+Route::get('fullpage', 'WelcomeController@fullpage');
 
 /*
 |--------------------------------------------------------------------------

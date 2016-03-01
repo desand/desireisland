@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        view()->share('_title', '宠物约约');
+        view()->share('_title', 'KAID | 凯德公共关系咨询有限公司 | 启迪奇迹');
     }
 
     /**

@@ -16,6 +16,7 @@
   dismissible>
   This is an alert
 </vs-alert>
+<fullpage>helloworld</fullpage>
 <section class="dx-header">
 	<div class="col-xs-12">
 		@yield('title', $_title)123

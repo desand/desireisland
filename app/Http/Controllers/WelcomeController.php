@@ -13,4 +13,9 @@ class WelcomeController extends Controller
     {
     	return view('pages.h5');
     }
+
+    public function fullpage()
+    {
+    	return view('pages.fullpage');
+    }
 }

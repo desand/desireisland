@@ -23,6 +23,9 @@ elixir(function(mix) {
        .browserify('app.js')
        .stylus('main.styl')
        .copy(paths.bootstrap, "public/fonts/bootstrap");*/
-
+    mix.copy("node_modules/jquery/dist", "public/js");
+    //mix.copy("node_modules/fullpage/build/fullpage.css", "public/css/fullpage.css");
+    mix.sass('app.sass')
+       .stylus('main.styl');
     mix.browserify('main.js');
 });

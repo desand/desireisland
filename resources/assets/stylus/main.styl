@@ -1,4 +1,10 @@
+base-white = #fff
 base-black = #000
+base-gray = #666
+base-yellow = rgb(190, 144, 37)
+light-yellow = rgb(232, 190, 54)
+
+base-size = 14px
 
 // Mixins.styl
 has($name)
@@ -12,8 +18,8 @@ variant($name)
 add(a, b = unit(a, px))
    a + b
    	
-color-black()
-	color: base-black
+color-yellow()
+	color base-yellow
 
 border-radius()
 	-webkit-border-radius: arguments
@@ -21,21 +27,129 @@ border-radius()
 	border-radius: arguments
 
 body
-	font: 12px Helvetica, Arial, sans-serif
+	font: 14px Helvetica, Arial, sans-serif
 
 a.button
 	border-radius(5px)
 	&__item
 		color: red
+	
+.header
+	height 60px
+	overflow hidden
+	padding 5px 0
+	line-height 1.2
 
-.dx-header
-	color-black()
+.cols-5
+	width 20%
+
+.relative
+	position relative
+
+.fullheight
+	height 100%
+	.carousel-inner
+		height 100%
+
+.text-yellow
+	color-yellow()
 	
-.DXHeader
-	+has(item)
-		color red(#000, 255)
-		font add(6px, 1) Helvetica, Arial
-		
-	.test
-		color green
+.carousel {
+    bottom: 50px;
+    position: absolute;
+    top: 111px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.flexbackground
+	background-image url('http://www.menda.mobi/public/default/frontEnd/image/transparent.png')
+	background-size 100% auto
+	background-repeat no-repeat
+	background-position center center
+	+has(width)
+		background-size 100% auto
+	+has(height)
+		background-size auto 100%
+
+#indexMarquee
+	position absolute
+	bottom 0
+	width 100%
+	height 35px
+	text-align center
 	
+nav#nav 
+	li 
+		background base-yellow
+		li
+			background rgba(255, 255, 255, 0.8)
+	a
+		line-height 1.2
+		font-size base-size
+		background none
+		&:hover
+			text-decoration none
+			background none
+			color base-white
+			
+	& .submenu
+		opacity .9
+		a
+			background none
+			color base-black
+			
+nav#nav li:hover
+	background light-yellow
+	li
+		background none
+		&:hover
+			background none
+
+#section2
+	.header
+		line-height 1.7
+		border-bottom 1px solid #ccc    
+
+#mainContent
+	position absolute
+	top 60px
+	bottom 160px
+	left 0
+	right 0
+	padding 8px 0
+	border-bottom 1px solid #ccc 
+	
+.mainContent
+	+has(title)
+		font-size 20px
+		border-bottom 2px solid #eee
+		padding 10px 0
+	+has(content)
+		padding 10px 0
+		line-height 2
+
+#footer
+	position absolute
+	bottom 0
+	left 0
+	right 0
+	padding 8px 0
+	height 160px
+	border-bottom 1px solid #ccc 
+
+.footer
+	+has(nav)
+		padding 20px 0
+		border-bottom 1px solid #ccc
+		& a
+			color base-gray
+			text-decoration none
+			&:hover
+				color #333
+				text-decoration none
+	+has(info)
+		padding 30px 0 0 0
+		line-height 5
+		color base-gray
