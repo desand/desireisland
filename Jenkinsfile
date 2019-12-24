@@ -6,7 +6,7 @@ pipeline {
                 docker { image 'desand/centos-php72-jq:v1' }
             }
             steps {
-                sh 'composer -v'
+                sh 'composer install -vvv'
             }
         }
         stage('Front-end') {
